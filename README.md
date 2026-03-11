@@ -97,7 +97,7 @@ Or simply **download the ZIP** and open `index.html` directly in any modern brow
 
 | Home Page | Definition Page | Saved Words |
 |---|---|---|
-| ![Home](screenshots/home.png) | ![Definition](screenshots/definition.png) | ![Saved](screenshots/saved.png) |
+| ![Home](home.png) | ![Definition](definition.png) | ![Saved](saved.png) |
 
 ---
 
@@ -131,18 +131,6 @@ This project uses the free and open-source [Free Dictionary API](https://diction
 
 ---
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙋‍♂️ Author
-
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
-
----
 
 > ⭐ If you found this project helpful, please give it a star on GitHub!
