@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dictionary App</title>
+
+  <!-- Link to our CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========================================
+       HOME PAGE
+       This is the first page people see
+       ======================================== -->
+  <div id="home-page">
+
+    <h1>📖 Dictionary</h1>
+    <p>Type a word below and press Enter to search</p>
+
+    <!-- Search box -->
+    <div class="search-area">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="e.g. apple, happy, run..."
+      />
+      <button id="search-button">Search</button>
+    </div>
+
+    <!-- Button to open saved words -->
+    <button id="open-bookmarks-button">⭐ My Saved Words</button>
+
+  </div>
+
+
+  <!-- ========================================
+       DEFINITION PAGE
+       Shows the word meaning after searching
+       This page is hidden until user searches
+       ======================================== -->
+  <div id="definition-page" class="hidden">
+
+
+    <div class="top-buttons">
+      <button id="back-button">← Back</button>
+      <button id="save-button">⭐ Save Word</button>
+    </div>
+
+
+    <div class="word-box">
+      <h2 id="word-title">Word</h2>
+      <p id="phonetic-text"></p>
+      <button id="play-audio-button" class="hidden">🔊 Listen</button>
+    </div>
+
+
+    <div id="definitions-container"></div>
+
+  </div>
+
+
+  <div id="bookmarks-page" class="hidden">
+
+    <div class="top-buttons">
+      <button id="bookmarks-back-button">← Back</button>
+      <h2>⭐ My Saved Words</h2>
+    </div>
+
+
+    <div id="bookmarks-container"></div>
+
+  </div>
+
+  <div id="not-found-page" class="hidden">
+
+    <p style="font-size: 50px;">😕</p>
+    <h2>Word Not Found</h2>
+    <p>We couldn't find that word. Please check the spelling and try again.</p>
+    <button id="not-found-back-button">← Go Back</button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

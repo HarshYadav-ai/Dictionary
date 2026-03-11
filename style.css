@@ -1,0 +1,332 @@
+/* ==========================================
+   DICTIONARY APP - style.css
+   Written in simple beginner style
+   ========================================== */
+
+
+/* ==========================================
+   GENERAL STYLES
+   These apply to the whole page
+   ========================================== */
+
+/* The body is the whole page background */
+body {
+  background-color: #f0f4ff;
+  font-family: Georgia, serif;
+  color: #222222;
+  margin: 0;
+  padding: 20px;
+}
+
+/* This centers everything on screen */
+#home-page,
+#definition-page,
+#bookmarks-page,
+#not-found-page {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* The .hidden class makes any element invisible */
+/* We use JavaScript to add/remove this class */
+.hidden {
+  display: none;
+}
+
+
+/* ==========================================
+   HOME PAGE STYLES
+   ========================================== */
+
+/* Big title at the top */
+#home-page h1 {
+  font-size: 42px;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+/* Subtitle text under the title */
+#home-page p {
+  color: #666666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* The area that holds the input and search button */
+.search-area {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* The text input box */
+#search-input {
+  width: 280px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #c5cae9;
+  border-radius: 8px;
+  outline: none;
+  font-family: Georgia, serif;
+}
+
+/* Input box when user clicks on it */
+#search-input:focus {
+  border-color: #1a237e;
+}
+
+/* The blue Search button */
+#search-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+/* Search button when you hover over it */
+#search-button:hover {
+  background-color: #283593;
+}
+
+/* The "My Saved Words" button */
+#open-bookmarks-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+#open-bookmarks-button:hover {
+  background-color: #c2185b;
+}
+
+
+/* ==========================================
+   DEFINITION PAGE STYLES
+   ========================================== */
+
+/* The row that holds Back and Save buttons */
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* The ← Back button */
+#back-button,
+#bookmarks-back-button,
+#not-found-back-button {
+  padding: 10px 18px;
+  font-size: 15px;
+  background-color: #eeeeee;
+  color: #333333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+#back-button:hover,
+#bookmarks-back-button:hover,
+#not-found-back-button:hover {
+  background-color: #dddddd;
+}
+
+/* The Save Word button */
+#save-button {
+  padding: 10px 18px;
+  font-size: 15px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+#save-button:hover {
+  background-color: #c2185b;
+}
+
+/* The dark blue box that shows the word */
+.word-box {
+  background-color: #1a237e;
+  color: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  margin-bottom: 20px;
+}
+
+/* The word name inside the blue box */
+.word-box h2 {
+  font-size: 30px;
+  margin: 0 0 8px 0;
+  text-transform: capitalize;
+}
+
+/* The phonetic spelling e.g. /ˈæpəl/ */
+.word-box p {
+  font-size: 16px;
+  color: #c5cae9;
+  margin: 0 0 12px 0;
+}
+
+/* The 🔊 Listen button */
+#play-audio-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+#play-audio-button:hover {
+  background-color: #c2185b;
+}
+
+/* Each meaning card (noun, verb, etc.) */
+.meaning-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* The part of speech label e.g. "noun" */
+.part-of-speech {
+  font-size: 13px;
+  font-weight: bold;
+  color: #e91e63;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  display: inline-block;
+  background-color: #fce4ec;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* A definition sentence */
+.definition-text {
+  font-size: 15px;
+  color: #444444;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+
+/* Example sentence shown in italic */
+.example-text {
+  font-size: 14px;
+  color: #888888;
+  font-style: italic;
+  margin: 4px 0 6px 0;
+}
+
+/* A thin line between multiple entries */
+.divider-line {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 20px 0;
+}
+
+
+/* ==========================================
+   BOOKMARKS PAGE STYLES
+   ========================================== */
+
+/* Title on the bookmarks page */
+#bookmarks-page h2 {
+  font-size: 22px;
+  color: #1a237e;
+  margin: 0;
+}
+
+/* Each saved word row */
+.bookmark-row {
+  background-color: white;
+  border-radius: 10px;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  text-align: left;
+}
+
+.bookmark-row:hover {
+  background-color: #f5f5f5;
+}
+
+/* The word name in the row */
+.bookmark-word-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: #1a237e;
+  text-transform: capitalize;
+}
+
+/* Small text like "3 meanings" */
+.bookmark-word-count {
+  font-size: 13px;
+  color: #999999;
+  margin-top: 2px;
+}
+
+/* The red delete button on each row */
+.delete-button {
+  padding: 6px 12px;
+  font-size: 13px;
+  background-color: #ffebee;
+  color: #e53935;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+.delete-button:hover {
+  background-color: #ffcdd2;
+}
+
+/* Message when no words are saved */
+.empty-message {
+  color: #999999;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+
+/* ==========================================
+   NOT FOUND PAGE STYLES
+   ========================================== */
+
+#not-found-page h2 {
+  font-size: 26px;
+  color: #1a237e;
+  margin: 10px 0;
+}
+
+#not-found-page p {
+  color: #666666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
